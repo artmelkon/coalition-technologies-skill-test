@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:700');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body, header, main {
+    width: 100%;
+}
+
+body { font-family: arial, helvetica, sans-serf; font-size: .9em;}
+ul { list-style-type: none; }
+a { text-decoration: none; }
+h1, h2, h3, h4, h5, h6 { font-weight: 700; }
+p { font-weight: 400 }
+.center { text-align: center; }
+.title { padding-bottom: 8px 0; }
+.float-right { float: right; }
+.float-left { float: left; }
+.weight400 { font-weight: 400; }
+.weight700 { font-weight: 700; }
+.uppercase { text-transform: uppercase;}
+.drk-text { color: #be3600; }
+.lht-text { color: #fff }
+.oj-color { color: #ff6200; }
+
+.top-ribbon, .header-container, .breadcrumb-container, .paragraph-container, .contact-container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.menu li, .breadcrumb-container li, .social-out li {
+    display: inline-block;
+} 
+
+.top-ribbon-wrapper {
+    background-color: #ff6200;
+    display: flex;
+    height: 2.5em;
+}
+
+.top-ribbon:after, .breadcrumb-container:after, .social-out:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.top-ribbon {
+    font-family: 'Barlow Condensed', Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+
+header {
+    background-color: #ededed;
+}
+
+header, .breadcrumb-container, .contact-container {
+    padding: 40px 0;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li > a {
+    display: block;
+    padding: 10px 18px;
+    color: #333;
+    text-align: center;
+    font-size: .8em;
+}
+
+.menu li:hover > a {
+    font-weight: 700;
+    border-bottom: 3px solid #ff6200;
+}
+
+.submenu, .sub-submenu {
+    position: absolute;
+    display: none;
+    width: 120px;
+    border: 1px solid #2e2b2b;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.submenu li, .sumenu li a {
+    width:100%;
+    margin:0 auto 2px auto;
+}
+
+.submenu li:hover > a {
+    border: none;
+}
+
+.menu li:hover .submenu {
+    top: 37px;
+    left: -26%;
+    display: block;
+}
+
+.submenu li:hover .sub-submenu {
+    top: 0;
+    left: 118px;
+    display: block;
+}
+
+.breadcrumb-container li:before {
+    content:"/";
+    clear: both;
+}
+
+a.breadcrumb {
+    color: #777;
+}
+.active {
+    font-weight: 700;
+}
+
+.contact-container {
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -moz-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+}
+
+.cols {
+    width: 50%;
+}
+
+.right.cols {
+    padding-right: 15px;
+}
+
+.left.cols { padding-left: 40px; }
+
+.h-line { width: 100%; border: 3px solid #2e2b2b; }
+
+.form-container {
+    padding: 18px 0;
+}
+
+input, textarea { 
+    padding: 12px; 
+    border: 1px solid rgba(119, 119, 119, .2);
+    margin-bottom: 8px;
+}
+
+input {
+    height: 2em;
+}
+
+input:nth-child(1) {
+    width: 100%;
+}
+
+input:nth-child(2), input:nth-child(3) { width: 49%; }
+
+textarea {
+    width: 100%;
+    height: 110px;
+    max-height: 500vh;
+    resize: vertical;
+}
+
+::placeholder {
+    color: #333;
+}
+
+.btn {
+    background-color: #ff6200;
+    color: #fff;
+    padding: 8px 18px;
+    margin-top: 8px;
+}
+
+.address {
+    width: 180px;
+    margin: 15px 0;
+}
+
+.address li:first-child {
+    margin-bottom: 6px;
+}
+
+.address li:last-child {
+    margin-top: 15px;
+}
+
+.social-out {
+    margin-top: 30px;
+}
+
+.fab {
+    color: #aaa;
+    font-size: 3em;
+}
+
+.fab:hover {
+    color: #2d2d2d;
+    transition: 300ms ease-in-out;
+}
